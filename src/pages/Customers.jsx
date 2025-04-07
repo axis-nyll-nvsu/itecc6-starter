@@ -27,7 +27,7 @@ export default function Customers({searchKey}) {
                     <Link to={`/customers/${customer.id}`} key={customer.id}>
                         <CustomerCard customer={customer} />
                     </Link>
-                ) : <div className="text-sm">No customers found for "{searchKey}".</div>
+                ) : <div className="text-sm">No customers found for <span className="italic">"{searchKey}"</span>.</div>
             }
             </div>
         </div>
