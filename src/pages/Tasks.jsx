@@ -106,6 +106,7 @@ export default function Tasks({searchKey}) {
     }
     const deleteTask = (id) => {
         setTasks(tasks.filter((item) => item.id !== id));
+        mockTasks.splice(mockTasks.indexOf(id), 1);
         cancelTask();
     }
     const toggleDone = (id) => {
